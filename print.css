@@ -1,0 +1,49 @@
+/* Print Style Sheet */
+@media print {
+
+body { 
+	background:white;
+	color:black;
+	margin:0;
+	font-family: helvetica, arial, sans-serif;
+	text-transform:lowercase;
+	}
+
+h1 {font-weight: normal; color: black; font-size:1.25em; letter-spacing:0.1em; margin-bottom: 0.5em;}
+h2 {font-weight: normal; font-size: 1em; line-height:1.75em; margin:1em 0;}
+h3 {font-weight: normal; font-size:0.875em; margin-bottom: 0.5em; }
+
+p { font-size: 0.875em;}
+
+a {text-decoration: none; color: black;}
+
+#header { 
+	display: block;
+	border-bottom: 1px dotted black;
+	}
+
+.menu { display: none; }
+
+#content {
+	display: block;
+	margin-left: 0;
+	width: auto;
+	}
+	
+.post {
+	margin-top: 1em;
+	border-bottom: dotted 1px grey;
+	}
+.date {font-size: 0.75em; }
+
+#comments { display: block; }
+#commentform { display:none; }
+
+.navigation { display: none; }
+
+#footer { display: none; }
+
+ul {list-style: none;}
+
+
+}

@@ -1,0 +1,265 @@
+/*   
+Theme Name: j-clean
+Theme URI: http://josefrenner.ch/
+Description: a minimal theme for "wordpress-as-a-cms" usage
+Author: josef renner
+Author URI: http://josefrenner.ch
+Version: 1.1
+
+License: Creative Commons - Attribution-NonCommercial-ShareAlike 3.0 Unported
+.
+many thanks to holy warbles and the nation of luobaniya!
+.
+*/
+
+/*
+
+masseinheiten:
+==============
+1.25em = 20px
+1em = 16px
+0.875em = 14px
+0.75em = 12px
+0.625em = 10px
+0.5625em = 9px
+0.5em = 8px
+0.0625em = 1px
+
+*/
+
+* { margin: 0; padding: 0;}
+
+
+/*general*/
+
+body {
+	font-family: 'Cantarell', arial, sans-serif;
+	color:#333;
+	background:#fff;
+	font-size:100%;
+	line-height:1.125em;
+	text-transform:lowercase;
+	}
+
+h1 {font-weight: normal; color: #000; font-size:1.25em;  text-shadow: 3px 3px 3px #eee; letter-spacing:0.1em; margin-bottom: 0.5em;}
+h2 {font-weight: normal; font-size: 1em; line-height:1.75em; margin:1em 0; /*letter-spacing:0.1em;*/}
+h3 {font-weight: normal; font-size:0.875em; margin-bottom: 0.5em; } /*werden bis jetzt nur für comment-number in comment.php gebraucht*/
+
+p { font-size: 0.875em;}
+.description {/*font-style: italic;*/ color: #a6a6a6; /*margin-left: 0.4em;*/}
+.entry p {color: #666;}
+strong {line-height:2.25em; color: #333;}
+
+/*text sizes of lists are a mess! there are lists in entries, menu and blogroll! they need to get along better!*/
+ul {list-style:none;}
+.menu ul {font-size:0.875em;}
+.blogroll {font-size:0.875em; margin-bottom: 0.875em;}
+.entry ul {font-size:0.875em; color:#666;}
+/*containers*/
+
+#general_container {
+	width: 32em;
+	margin: 1.75em auto 0;
+	}
+
+#header { /* includes header & menu */
+	clear: both;
+	background:#fff;
+	margin: 0.875em 0 2.4em 0;
+	padding-left: 0.875em;
+	height: 100%;
+	/*border-radius: 0.875em; -moz-border-radius: 0.875em;
+	border: #666 1px solid;
+	padding: 15px;*/
+	}
+	
+#header img {margin:0;padding:0;}
+
+.aligncenter, div.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+	}
+
+.alignleft { float: left;}
+.alignright { float: right;}
+
+/*links*/
+
+a {text-decoration: none; color:#0099FF;}
+a:hover {text-decoration: underline;}
+a:visited {}
+a:active {}
+a img {border: none;}
+.current_page_item a {text-decoration:underline;}
+h1 a, h1 a:hover {color: #333; text-decoration:none;}
+h2, h2 a {color: #333;}
+
+/*menus*/
+
+.menu {margin-top:0.5em;/*margin-left:0.4em;*/}
+.menu li {display:inline; margin-right:0.5em;}
+
+/*blog*/
+
+.post {
+	background: #fff;
+	border: solid #6699CC 1px;
+	padding: 0 0 0.875em 0.875em;
+	clear: both;
+	}
+	
+.page_content {
+	margin-bottom:1.75em;
+	background: #fff;
+	border: none;
+	padding: 0 0 0.875em 0.875em;
+	}
+
+.post h2 {margin-bottom:0.5em;}
+
+.entry strong {margin-top:1em;} /* insert some space before titles */
+
+.entry ul {margin-bottom:1em;}
+
+.date { /* gerundete datumsbox in den posts*/
+	font-family: verdana;
+	position: absolute;
+	margin-top: -1em;
+	color: #6699CC;
+	background-color: #FFF;
+	font-size: 0.625em; /* = 10px */
+	letter-spacing: 0.1em;
+	border: 1px solid #6699CC;
+	border-radius: 0.75em; -moz-border-radius: 0.75em;
+	padding: 0.0625em 0.75em;
+	}
+	
+.postmetadata {
+	margin-top:0.4em;
+	margin-left:0.875em;
+	margin-bottom:2.4em; /*Nur falls Facebook Button inaktiv*/
+	/*border-top:dotted 1px #666;*/
+}
+
+.wpfblike { /* facebook like button, habs rausgenommen am 22.2.2012 */
+	margin:0.4em 0 1.625em 0.875em;
+	/*margin-bottom: 1.75em;*/
+}
+
+.navigation {
+	background: #fff;
+	height: 1.75em;
+	padding:0 1.5em 0 1.5em;
+	font-size: 0.875em;
+	font-style: italic;
+	}
+
+
+/* nav links und "no comment" in single ansicht */
+
+.navigation a,
+.no-comment {color:#a6a6a6}
+
+.navigation a {font-size: 0.875em;}
+
+.no-comment {font-size: 0.75em; margin-top:0.5em;}
+	
+#nav-above {margin-bottom:0.75em;}
+
+/*images*/
+
+img, a img {
+	/*border: 1px solid #666;*/
+	margin: 0 0.2em 0 0;
+	padding: 3px;
+	background:#fff;
+	}
+
+.no_border { border: none; }
+.wp-caption { /*to do!*/ }
+.wp-caption img {border: 0 none;}
+.wp-caption p.wp-caption-text { padding: 0 4px 5px; }
+
+
+/*comments*/
+
+#comment-list-head {color:#a6a6a6;}
+
+ul#comment-list {color: #444;}
+
+ul#comment-list li {
+	border-bottom: dotted 1px #666;
+	margin-bottom: 0.4em;
+	}
+
+
+ul#comment-list li p {font-style: italic;}
+ul#comment-list li p.comment-meta {font-style:normal;}
+	
+.comments-link {font-size: 0.875em;}
+
+#commentform { margin-bottom: 0.875em; }
+	
+#approvaltext { 
+	background-color: #888;
+	color: #fff;
+	margin-bottom: 0.875em;
+	padding: 0.125em;
+	}
+
+.comment-meta {
+	font-size: 0.625em;
+	margin: 0.5em 0 0.625em 0;
+	}
+	
+.comment-author-meta {
+	font-size: 0.625em;
+	margin: 0 0 0.625em 0;
+	}
+
+input#author {margin-top:1.5em;}
+
+input {margin-bottom: 0.5em; }
+
+#comment {
+	width: 100%;
+	max-width:100%;
+	resize: none;
+	}
+
+#submit { margin-top: 0.5em; }
+
+
+/*link lists*/
+
+li.linkcat {
+	float:left;
+	margin-right:2em; 
+	list-style:none;
+	}
+
+.link_lists { margin: 0 0 0 0.875em;}
+.link_lists h2 { margin: 0;}
+.linkcat ul { list-style:none;}
+.feed_container { clear: both; margin: 0 0 1em 0.875em;}
+
+/*footer*/
+
+#footer {
+	clear:both;
+	background:#fff;
+	padding:0.875em 0 0 0.875em;
+	border-top: dotted 1px #666;
+	font-size: 0.875em; color: #666;
+	}
+
+#blog-feed-line img {border:none; padding: 0;}
+
+#login li {font-size: 0.875em; display: inline;}
+
+.twitter-share-button {
+	margin:3px 0 2px;
+}
+
+/* got to have some oolong tea, right now! */

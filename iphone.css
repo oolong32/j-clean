@@ -1,0 +1,205 @@
+* { margin: 0; padding: 0;}
+
+
+/*general*/
+
+body {
+	font-family: arial, sans-serif;
+	color:#333;
+	background:#fff;
+	font-size:100%;
+	line-height:1.125em;
+	text-transform:lowercase;
+	}
+
+h1 {font-weight: normal; color: #000; font-size:1.25em;  text-shadow: 3px 3px 3px #eee; letter-spacing:0.1em; margin-bottom: 0.5em;}
+h2 {font-weight: normal; font-size: 0.75em; line-height:1.6em; margin:1em 0; /*letter-spacing:0.1em;*/}
+h3 {font-weight: normal; font-size:0.875em; margin-bottom: 0.5em; } /*werden bis jetzt nur für comment-number in comment.php gebraucht*/
+
+p { font-size: 0.6em; line-height: 1.4em; max-width: 95%;}
+.description {font-style: italic; color: #a6a6a6; margin-left: 0.5em; font-size: 0.5em;}
+.entry p {color: #666;}
+strong {line-height:2.25em; color: #333;}
+
+/*text sizes of lists are in a mess! there are lists in entries, menu and blogroll! they need to get along better!*/
+ul {list-style:none;}
+.menu ul {font-size:0.6em; line-height: 1.6em;}
+.blogroll {font-size:0.6em; line-height: 1.4em; margin-bottom: 0.875em;}
+.entry ul {font-size:0.6em; color:#666; line-height: 1.4em;}
+/*containers*/
+
+#general_container {
+	width: 100%;
+	margin-top:0;
+	}
+
+#header { /* includes header & menu */
+	clear: both;
+	background:#fff;
+	margin: 0.5em 0 1em 0;
+	padding-left: 1.2em;
+	height: 100%;
+	/*border-radius: 0.875em; -moz-border-radius: 0.875em;
+	border: #666 1px solid;
+	padding: 15px;*/
+	}
+
+.aligncenter, div.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+	}
+
+.alignleft { float: left;}
+.alignright { float: right;}
+
+/*links*/
+
+a {text-decoration: none; color:#0099FF;}
+a:hover {text-decoration: underline;}
+a:visited {}
+a:active {}
+a img {border: none;}
+.current_page_item a {text-decoration:underline;}
+h1 a, h1 a:hover {color: #333; text-decoration:none;}
+h2, h2 a {color: #333;}
+
+/*menus*/
+
+.menu {margin-top:0.875em;}
+.menu li {display:inline; margin-right:0.5em;}
+
+/*blog*/
+
+.post {
+	margin: 0 0.25em 1.75em 0.25em;
+	background: #fff;
+	border: solid #6699CC 1px;
+	padding: 0 0 0.875em 0.875em;
+	}
+	
+.page_content {
+	margin-bottom:1.75em;
+	background: #fff;
+	border: none;
+	padding: 0 0 0.875em 0.875em;
+	}
+
+.post h2 {margin: 1.4em 0 0 0;}
+
+.date { /* gerundete datumsbox in den posts*/
+	font-family: verdana;
+	position: absolute;
+	margin-top: -1em;
+	color: #6699CC;
+	background-color: #FFF;
+	font-size: 0.625em; /* = 10px */
+	letter-spacing: 0.1em;
+	border: 1px solid #6699CC;
+	border-radius: 0.75em; -moz-border-radius: 0.75em;
+	padding: 0.0625em 0.75em;
+	}
+	
+.postmetadata {
+	margin-top:0.875em;
+	/*border-top:dotted 1px #666;*/
+}
+
+.navigation {
+	background: #fff;
+	height: 1.75em;
+	padding:0 0.875em 0 0.875em;
+	font-size: 0.875em;
+	font-style: italic;
+	}
+	
+#nav-above {margin-bottom: 0.75em;}
+
+/*images*/
+
+img {max-width: 95%; height: auto;}
+
+img, a img {
+	/*border: 1px solid #666;*/
+	margin: 0 0.2em 0 0;
+	padding: 3px;
+	background:#fff;
+	}
+
+.no_border { border: none; }
+.wp-caption { /*to do!*/ }
+.wp-caption img {border: 0 none;}
+.wp-caption p.wp-caption-text { padding: 0 4px 5px; }
+
+
+/*comments*/
+
+ul#comment-list {color: #444;}
+
+ul#comment-list li {
+	border-bottom: dotted 1px #666;
+	margin-bottom: 0.4em;
+	}
+
+.comments-link {font-size: 0.875em;}
+
+#commentform { margin-bottom: 0.875em; }
+	
+#approvaltext { 
+	background-color: #888;
+	color: #fff;
+	margin-bottom: 0.875em;
+	padding: 0.125em;
+	}
+
+.comment-meta {
+	font-size: 0.625em;
+	margin: 0.5em 0 0.625em 0;
+	}
+	
+.comment-author-meta {
+	font-size: 0.625em;
+	margin: 0 0 0.625em 0;
+	}
+
+input#author {margin-top:1.5em;}
+
+input {margin-bottom: 0.5em; }
+
+#comment {
+	width: 100%;
+	max-width:100%;
+	resize: none;
+	}
+
+#submit { margin-top: 0.5em; }
+
+
+/*link lists*/
+
+li.linkcat {
+	float:left;
+	margin-right:2em; 
+	list-style:none;
+	}
+
+.link_lists { margin: 0 0 0 0.875em;}
+.link_lists h2 { margin: 0;}
+.linkcat ul { list-style:none;}
+.feed_container { clear: both; margin: 0 0 1em 0.875em;}
+
+/*footer*/
+
+#footer {
+	clear:both;
+	background:#fff;
+	padding:0.875em 0 0 0.875em;
+	border-top: dotted 1px #666;
+	font-size: 0.875em; color: #666;
+	}
+
+#blog-feed-line img {border:none; padding: 0;}
+
+#login li {display: none;}
+
+/* got to have some oolong tea, right now! */
