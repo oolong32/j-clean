@@ -11,3 +11,6 @@ Author URI: http://josefrenner.ch
 Version: 1.1
 
 License: Creative Commons - Attribution-NonCommercial-ShareAlike 3.0 Unported
+
+Hello World, this is a Test (does git track this, and how does it tell me)
+
